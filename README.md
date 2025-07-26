@@ -1,4 +1,4 @@
-# Gemini Chatbot Frontend Development
+# Sarthi
 
 <a href="https://swapan-code.github.io/Gemini-Chatbot-Frontend-Project/" target="_blank">Live Link</a>
 <br>
