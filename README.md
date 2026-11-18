@@ -1,59 +1,97 @@
-# Sarthi
+# 🤖 Sarthi — Gemini AI Assistant
 
-<a href="https://swapan-code.github.io/Gemini-Chatbot-Frontend-Project/" target="_blank">Live Link</a>
-<br>
-<br>
-Screenshots:
-![image](https://github.com/Vishal123-tech/Sarti/blob/main/Screenshot%202025-07-26%20110205.png)
-<br>
-<br>
-![image](https://github.com/Vishal123-tech/Sarti/blob/main/2%20Screenshot%202025-07-26%20110343.png)
-<br>
-<br>
+<div align="center">
 
+<p><strong>A responsive, browser-based AI chatbot powered by the Google Gemini API.</strong></p>
 
-Welcome to the **Gemini Chatbot** project! This project showcases the development of a responsive and interactive chatbot interface using **HTML**, **CSS**, and **JavaScript**. The chatbot leverages the Google Gemini API to provide dynamic responses based on user input, offering an engaging user experience.
+<a href="https://swapan-code.github.io/Gemini-Chatbot-Frontend-Project/"><img src="https://img.shields.io/badge/Live%20Demo-Visit%20Sarthi-2563eb?style=for-the-badge" alt="Live demo" /></a>
+<a href="https://github.com/Vishal123-tech/Sarti"><img src="https://img.shields.io/badge/Source%20Code-GitHub-111827?style=for-the-badge&logo=github" alt="Source code" /></a>
 
-## Features
+<br /><br />
 
-- **Responsive Design**: The UI is fully responsive, ensuring optimal performance on both desktop and mobile devices.
-- **Dynamic API Integration**: Integrated with the Google Gemini API to generate real-time responses based on user queries.
-- **Theme Toggle**: Users can switch between light and dark modes, with preferences stored in local storage.
-- **Local Storage**: Chat history and user settings are preserved across sessions, providing a consistent and personalized experience.
-- **User-Friendly Interface**: Includes pre-configured suggestions to help users quickly explore the chatbot’s capabilities.
+<img src="Screenshot%202025-07-26%20110205.png" width="82%" alt="Sarthi chatbot welcome screen" />
 
-## Project Structure
+</div>
 
-- `index.html`: The main HTML file that structures the chatbot interface.
-- `styles.css`: Contains all the CSS styles for layout, theme, and responsiveness.
-- `script.js`: JavaScript file responsible for handling user interactions, API requests, theme toggling, and local storage management.
+## ✨ Overview
 
-## Installation
+Sarthi is a lightweight Gemini chatbot interface built with plain HTML, CSS, and JavaScript. It provides a clean conversational experience with suggested prompts, theme switching, locally saved chat history, and a typing-style response animation.
 
-To get a local copy up and running, follow these simple steps:
+The project is intentionally frontend-first, making it easy to understand, customize, and run without a framework or build step.
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/Swapan-code/Gemini-Chatbot-Frontend-Project.git
-    ```
-   
-2. **Open the project directory**:
-    ```bash
-    cd Gemini-Chatbot-Frontend-Project
-    ```
+## 🚀 Features
 
-3. **Run the project**:
-   Simply open `index.html` in your browser to see the chatbot in action.
+- **Gemini API integration** for conversational AI responses
+- **Responsive interface** for desktop and mobile screens
+- **Light and dark themes** with the preference saved locally
+- **Persistent chat history** using browser `localStorage`
+- **Suggested prompts** for a faster first interaction
+- **Typing animation** for a more natural chat experience
+- **Clear chat control** for starting a fresh conversation
+- **Identity-aware responses** for common assistant questions
 
-## Usage
+## 🛠️ Tech stack
 
-- Type a prompt in the input box and hit the send button to interact with the chatbot.
-- Use the theme toggle button to switch between light and dark modes.
-- Chat history will be automatically saved and loaded on subsequent visits.
+| Technology | Purpose |
+|---|---|
+| HTML5 | Page structure and semantic layout |
+| CSS3 | Responsive design, themes, and visual styling |
+| JavaScript | Chat state, API requests, and interactions |
+| Google Gemini API | Generating assistant responses |
+| LocalStorage | Saving theme and chat history in the browser |
 
-## API Configuration
+## 📸 Screenshots
 
-This project uses the Google Gemini API. To use your own API key, replace the existing API key in `script.js`:
+<div align="center">
 
-```javascript
-const API_KEY = "YOUR_API_KEY_HERE"; 
+<img src="Screenshot%202025-07-26%20110205.png" width="48%" alt="Sarthi light interface" />
+<img src="2%20Screenshot%202025-07-26%20110343.png" width="48%" alt="Sarthi conversation interface" />
+
+</div>
+
+## 📁 Project structure
+
+```text
+Sarti/
+├── index.html      # Chatbot layout and controls
+├── styles.css      # Responsive layout and theme styles
+├── script.js       # Gemini requests and chat interactions
+├── Screenshot ...  # Project screenshots
+└── README.md       # Project documentation
+```
+
+## ▶️ Run locally
+
+```bash
+git clone https://github.com/Vishal123-tech/Sarti.git
+cd Sarti
+```
+
+Then open `index.html` in a browser, or serve the folder with any static server:
+
+```bash
+python -m http.server 5500
+```
+
+Open [http://localhost:5500](http://localhost:5500) in your browser.
+
+## 🔐 API key note
+
+The current frontend calls the Gemini API directly from the browser. For a real deployment, do **not** expose a production API key in `script.js`. Move the Gemini request to a small backend or serverless function, store the key in an environment variable, and restrict the key by API, domain, and usage limits.
+
+## 🧭 Possible improvements
+
+- Add a backend proxy for protected API-key handling
+- Add Markdown and code-block rendering for assistant responses
+- Add streaming responses for faster perceived performance
+- Add conversation export and message retry controls
+- Add rate limiting and clearer error states
+
+## 👤 Author
+
+**Vishal Yadav**
+
+- GitHub: [Vishal123-tech](https://github.com/Vishal123-tech)
+- Portfolio: [portfolio-one-sigma-39.vercel.app](https://portfolio-one-sigma-39.vercel.app/)
+
+If you find this project useful, consider giving it a ⭐ on GitHub.
